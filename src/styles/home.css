@@ -1,0 +1,34 @@
+/* src/styles/globals.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes slideBackground {
+  0% {
+    background-position: left center;
+  }
+  100% {
+    background-position: right center;
+  }
+}
+
+.home-background {
+  height: calc(90vh - 95px); /* ocupar o resto da tela menos o header */
+  background-image: url('../assets/images/gesso-sala.jpg'); /* caminho absoluto da imagem em /public */
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+  background-position: left center; /* posição inicial */
+  animation: slideBackground 5s ease forwards;
+}
+.content {
+  text-align: center;
+}
