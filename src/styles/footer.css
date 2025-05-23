@@ -1,0 +1,23 @@
+.footer {
+  margin-top: 4rem;
+  text-align: center;
+  background-color: var(--light-gray-background-color);
+  padding: 5rem 0;
+}
+
+.footer h2 {
+  font-family: var(--secondary-letter);
+  font-size: var(--normal-font);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.centralized {
+  justify-content: center;
+}
