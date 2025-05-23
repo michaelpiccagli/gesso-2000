@@ -1,6 +1,8 @@
 import '../styles/reset.css'
 import '../styles/globals.css'    
 import '../styles/variables.css'  
+import '../lib/fontawesome.ts'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
