@@ -28,6 +28,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--secondary-color);   
   border-radius: 6px;
 }
+
 .container {
   max-width: 1140px;
   margin: auto;

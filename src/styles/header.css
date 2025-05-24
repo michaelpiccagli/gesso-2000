@@ -7,19 +7,15 @@
   color: var(--white-color);
   font-family: var(--secondary-letter);
   font-size: var(--extra-large-font);
-  border: 2px solid var(--white-color);
-  border-radius: 50%;
-  width: 65px;
+  width: 200px;
   height: 65px;
   line-height: 59px;
   text-align: center;
-  text-decoration: underline;
   transition: 0.2s;
 }
 
 .header a:hover .logo {
   color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
 }
 
 .header nav ul {

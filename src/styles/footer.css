@@ -1,57 +1,76 @@
-
-.footer{
-    grid-area: footer;
-    display: flex;
-    background-color: var(--dark-background-color);
-    flex-direction: column;
-    text-align: center;
-    padding: 100px 0;
+.footer {
+    background-color: var(--dark-gray-background-color);
+    color: var(--white-color);
+    padding: 50px 20px;
 }
 
-.footer h4{
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.footer nav{
-    margin: 50px 0;
-}
-
-.footer ul{
-    display: flex;
-    justify-content: center;
-    max-width: 320px;
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
     margin: 0 auto;
+    font-weight: 600;
 }
 
-.footer nav ul li a{
-     color: var(--white-color);
-  text-transform: capitalize;
-  font-size: 2rem;
-  font-weight: 500;
-  padding: 10px 20px;
-  transition: all 0.5s ease-in;
-  border-radius: 50px;
-  letter-spacing: 1px;
-  user-select: none;
+.footer-col p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    
 }
 
-.footer nav ul li a:hover{
-    box-shadow: inset 190px 0 0 0 var(--secondary-color);
-  color: white;
-  border-radius: 5px;
+.footer-col h5 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
 }
 
-.footer .social i{
-    font-size: 2rem;
-    transition: 0.3s;
+.footer-col ul {
+    list-style: none;
+    padding: 0;
 }
 
-.footer .social a{
-    margin: 20px;
+.footer-col ul li {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.footer .social a:hover{
-    color: #fff;
+.footer-col ul li a {
+    color: var(--white-color);
+    transition: color 0.3s, transform 0.3s;
+    display: block;
+    transform-origin: left center;
+    text-decoration: none; /* opcional, evita sublinhado */
+}
+
+.footer-col ul li a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+.footer-col .social-icons a {
+    margin-right: 10px;
+    font-size: 3.5rem;
+    color: var(--white-color);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.footer-col .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.footer-col .social-icons a:hover .fa-facebook-square {
+    color: #0866ff;
+}
+
+.footer-col .social-icons a:hover .fa-instagram {
+    color: #C13584;
+}
+
+.footer-col .social-icons a:hover .fa-whatsapp {
+    color: #25D366;
 }

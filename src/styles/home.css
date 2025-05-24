@@ -1,34 +1,62 @@
-/* src/styles/globals.css */
+.home-carousel {
+  height: calc(90vh - 95px); /* ajuste conforme altura do seu header */
+  width: 100%;
+}
 
-html, body {
-  margin: 0;
-  padding: 0;
+.swiper-home {
   height: 100%;
-  font-family: Arial, sans-serif;
 }
 
-@keyframes slideBackground {
-  0% {
-    background-position: left center;
-  }
-  100% {
-    background-position: right center;
-  }
-}
-
-.home-background {
-  height: calc(90vh - 95px); /* ocupar o resto da tela menos o header */
-  background-image: url('../assets/images/gesso-sala.jpg'); /* caminho absoluto da imagem em /public */
+.carousel-slide {
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-shadow: 0 0 5px rgba(0,0,0,0.7);
-  background-position: left center; /* posição inicial */
-  animation: slideBackground 5s ease forwards;
+  position: relative;
+  transition: opacity 2s ease-in-out;
 }
-.content {
+
+.carousel-text {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   text-align: center;
+  padding: 0 20px;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
 }

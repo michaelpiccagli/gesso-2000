@@ -14,7 +14,7 @@ export default function Header() {
       <div className="container">
         <div className="row justify-content-between align-items-center">
           <a href="#">
-            <h1 className="logo no-select">Gesso</h1>
+            <h1 className="logo no-select">Gesso 2000</h1>
           </a>
           <nav>
             <div
@@ -34,13 +34,13 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <a href="#Projects" onClick={closeMenu}>
-                  Projetos
+                <a href="#Services" onClick={closeMenu}>
+                  Serviços
                 </a>
               </li>
               <li>
                 <a href="#about-us" onClick={closeMenu}>
-                  Quem Somos
+                  Sobre Nós
                 </a>
               </li>
               <li>
