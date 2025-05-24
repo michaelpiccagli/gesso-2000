@@ -1,55 +1,56 @@
-import '../styles/about.css';
-import imgProfile2 from '../assets/img/michael-2.jpg';
+import '../../styles/about.css';
+import Image from 'next/image';
+import imgProfile2 from '../../assets/img/dry-wall.jpg';
 
 const About = () => {
-  return (
-    <section className="about section" id="about">
-      <div className="container">
-        <div className="row">
-          <div className="section-title">
-            <h2 className="typing no-select">Sobre mim</h2>
-          </div>
-        </div>
-        <div className="row">
-          <div className="image-about no-select">
-            <div className="img-box inner-shadow">
-              <img
-                src={imgProfile2} alt="Foto de Michael Piccagli, desenvolvedor Front-end"
-                className="outer-shadow"
-              />
+    return (
+        <section className="about section" id="about">
+            <div className="container">
+                <div className="row">
+                    <div className="section-title">
+                        <h2 className="typing no-select">Sobre Nós</h2>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="image-about no-select">
+                        <div className="img-box inner-shadow">
+                            <Image
+                                src={imgProfile2}
+                                alt="Parede de Dry-wall"
+                                priority
+                                fill
+                                sizes="300px"
+                                style={{ objectFit: 'cover', borderRadius: '8px' }}
+                            />
+                        </div>
+                    </div>
+                    <div className="informations-about no-select">
+                        <p>
+                            Com atuação contínua desde 1992, a Gesso 2000 é uma empresa familiar especializada em soluções técnicas e decorativas em gesso, unindo tradição, inovação e excelência em acabamento.
+                        </p>
+                        <p>
+                            Nossa trajetória começou há mais de três décadas, com profissionais experientes que transmitiram seus conhecimentos e práticas ao longo das gerações. Esse legado nos permitiu evoluir, mantendo a qualidade artesanal que nos diferencia, ao mesmo tempo em que incorporamos novas tecnologias, materiais e métodos construtivos.
+                        </p>
+                        <p>
+                            O nome Gesso 2000 surgiu em meio ao clima de incertezas que antecedia o ano 2000 — um marco simbólico de transformação. Enquanto muitos acreditavam que o mundo poderia mudar drasticamente, decidimos investir no que sabíamos fazer de melhor: moldar espaços com qualidade e precisão. Hoje, em 2025, esse nome representa solidez, longevidade e compromisso com o futuro da construção civil e da decoração.
+                        </p>
+                        <p>Atendemos projetos residenciais, comerciais e corporativos com foco em:</p>
+                        <ul>
+                            <li>Rebaixamento de tetos</li>
+                            <li>Sancas e molduras</li>
+                            <li>Iluminação embutida</li>
+                            <li>Divisórias e painéis em drywall</li>
+                            <li>Soluções acústicas e térmicas com gesso</li>
+                        </ul>
+                        <p>
+                            Acreditamos que o acabamento é uma das etapas mais importantes da obra, e por isso trabalhamos com planejamento rigoroso, execução qualificada e respeito aos prazos.
+                        </p>
+                        <p><strong>Gesso 2000 — há mais de 30 anos moldando qualidade e confiança em cada projeto.</strong></p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div className="informations-about no-select">
-            <p>
-              <strong>Olá! Meu nome é Michael Piccagli, sou bacharel em Sistemas de Informação</strong>
-              E atualmente estou desenvolvendo minhas hard skills de front-end com o curso DevQuest em formação! Sou
-              apaixonado por tecnologia e acredito no poder do aprendizado contínuo. Após anos atuando como eletricista, decidi migrar para a área de tecnologia, onde encontrei minha verdadeira
-              vocação. Sou bacharel em Sistemas de Informação, formação na qual adquiri conhecimentos em redes de
-              computadores, segurança da informação, desenvolvimento de sistemas, engenharia de software, UML e gestão de
-              projetos. Atualmente, estou focado no desenvolvimento Front-End, criando projetos pessoais com foco em
-              responsividade, código limpo e design intuitivo.
-            </p>
-            <p>
-              Estou sempre me desafiando com novos projetos, atualmente estou
-              concluindo o Curso DevQuest com mentorias em grupo. O curso é
-              focado no desenvolvimento web front-end e tem uma comunidade com
-              mais de 400 pessoas que ajuda muito quem está iniciando, assim
-              posso aprender e ensinar o que aprendi ao mesmo tempo.
-            </p>
-            <p>
-              Ah, gosto de todos os tipos de jogos, filmes de ação/terror,
-              séries principalmente relacionadas a tecnologia, animes e outras
-              nerdices.
-            </p>
-            <div className="btn glow-on-hover">
-              <a
-                href="/documents/MichaelPiccagli_DevWebFrontEndJunior.pdf" target="_blank" rel="noopener noreferrer" className="btn">Veja meu CV</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default About;

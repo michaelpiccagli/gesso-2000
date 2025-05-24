@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 
 html {
-  color: var(--white-color);
+  color: #000000;
   font-size: 62.5%;
   font-weight: 300;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--dark-gray-background-color);
+  background-color: var(--white-color);
   font-family: var(--primary-letter);
   font-size: var(--normal-font);
   overflow-x: hidden;
