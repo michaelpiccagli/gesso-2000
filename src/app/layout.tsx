@@ -4,6 +4,7 @@ import '../styles/variables.css'
 import '../lib/fontawesome.ts'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Header from '../components/Header'
+import About from './about-us/page';
 import Footer from '../components/Footer'
 
 export const metadata = {
@@ -17,6 +18,7 @@ export const metadata = {
       <body>
         <Header />
         {children}
+        <About />
         <Footer />
       </body>
     </html>

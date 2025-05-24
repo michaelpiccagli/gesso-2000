@@ -1,5 +1,5 @@
 .home-carousel {
-  height: calc(90vh - 95px); /* ajuste conforme altura do seu header */
+  height: calc(90vh - 95px); 
   width: 100%;
 }
 
@@ -20,14 +20,16 @@
 }
 
 .carousel-text {
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 0 20px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
 }
 
-/* Botão flutuante do WhatsApp */
 .whatsapp-float {
   position: fixed;
   bottom: 25px;

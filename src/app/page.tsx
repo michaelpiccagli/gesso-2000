@@ -21,12 +21,12 @@ export default function Home() {
         >
           <SwiperSlide>
             <div className="carousel-slide" style={{ backgroundImage: "url('/images/gesso-sala.jpg')" }}>
-              <h1 className="carousel-text">Transformando ambientes com elegância</h1>
+              <h1 className="carousel-text">Transformando ambientes com elegância e design modernos</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="carousel-slide" style={{ backgroundImage: "url('/images/gesso-3d.jpg')" }}>
-              <h1 className="carousel-text">Soluções modernas em gesso</h1>
+              <h1 className="carousel-text">Soluções modernas em gesso e iluminção</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
