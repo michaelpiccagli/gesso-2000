@@ -39,7 +39,7 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <a href="#about-us" onClick={closeMenu}>
+                <a href="#about" onClick={closeMenu}>
                   Sobre Nós
                 </a>
               </li>

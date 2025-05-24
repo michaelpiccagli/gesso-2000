@@ -43,7 +43,7 @@
     transition: color 0.3s, transform 0.3s;
     display: block;
     transform-origin: left center;
-    text-decoration: none; /* opcional, evita sublinhado */
+    text-decoration: none; 
 }
 
 .footer-col ul li a:hover {

@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Header from '../components/Header'
 import About from './about-us/page';
 import Footer from '../components/Footer'
+import TopButton from '../components/TopButton';
 
 export const metadata = {
   title: 'Gesso 2000',
@@ -18,6 +19,7 @@ export const metadata = {
       <body>
         <Header />
         {children}
+        <TopButton />
         <About />
         <Footer />
       </body>
