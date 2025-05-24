@@ -56,8 +56,7 @@ const About = () => {
         <div className="row">
           <div
             className={`image-about no-select ${imageVisible ? 'visible' : ''}`}
-            ref={imageRef}
-          >
+            ref={imageRef}>
             <div className="img-box inner-shadow">
               <Image
                 src={imgProfile2}
